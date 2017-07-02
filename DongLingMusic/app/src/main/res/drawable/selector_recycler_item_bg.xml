@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:hudson="http://schemas.android.com/apk/res-auto">
+
+    <item hudson:state_selected="true" android:drawable="@drawable/list_item_bg_selected"/>
+
+    <item hudson:state_playing="true" android:drawable="@drawable/list_item_bg_playing"/>
+
+    <item android:state_pressed="true" android:drawable="@drawable/list_item_bg_pressed"/>
+
+    <item android:drawable="@drawable/list_item_bg_normal"/>
+
+</selector>

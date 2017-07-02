@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="#f0ecd5" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#d2be92"
+            android:gravity="center"
+            android:text="@string/dialog_exit_at_time"
+            android:textColor="#42aa0f"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#8b846b" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/choices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bt_num"
+            android:text="@string/dialog_exit_song_num"
+            style="@style/DialogExitAtTimeButtonStyle"/>
+
+        <Button
+            android:id="@+id/bt_time"
+            style="@style/DialogExitAtTimeButtonStyle"
+            android:text="@string/dialog_exit_time_offset" />
+        <Button
+            android:id="@+id/bt_dealtime"
+            style="@style/DialogExitAtTimeButtonStyle"
+            android:text="@string/dialog_exit_time_point" />
+    </LinearLayout>
+</LinearLayout>

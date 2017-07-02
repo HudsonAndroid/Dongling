@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">动铃音乐</string>
+    <string name="version_desc">版本：2.0</string>
+    <string name="person_author_desc">作者:hudson</string>
+    <string name="start_use">开始体验</string>
+    <string name="author">Hudson</string>
+    <string name="no_lrc">没有找到歌词</string>
+    <string name="no_lrc_show_after">动铃音乐，音乐你的人生</string>
+    <string name="play_mode">播放模式</string>
+    <string name="equalize">均衡器</string>
+    <string name="exit_timing">定时退出</string>
+    <string name="setting">设置</string>
+    <string name="about">关于</string>
+    <string name="headset_setting">耳机按键设置</string>
+    <string name="modify_gedan_info">修改歌单信息</string>
+    <string name="exit">退出</string>
+    <string name="empty_downloading_tip">当前没有正在下载的歌曲哦！</string>
+    <string name="empty_play_list_tip">当前没有任何记录哦！</string>
+
+    <string name="lyrics_make_step_one_tip">制作提示</string>
+    <string name="lyrics_make_step_two_tip">编辑歌词</string>
+    <string name="lyrics_make_step_three_tip">制作歌词</string>
+    <string name="lyrics_make_step_one_desc">欢迎使用歌词制作向导,在制作歌词之前您需要知道：\n
+        1.歌词文本需要您自己编辑\n 2.如果歌曲本身存在歌词，那么您创建的歌词将会替换原有歌词\n
+        3.歌词保存在动铃音乐歌词目录中\n
+        4.请按照后续步骤提示完成歌词制作\n
+        5.在歌词制作过程，应用自动开启单曲循环模式，以避免歌曲切换导致您的工作白费;在退出歌词制作之后，应用将自动还原原始播放模式
+    </string>
+    <string name="lyrics_make_step_two_desc">
+        您需要在本页面编辑歌词文本，当然为了节约您的时间，您最好从网上复制歌词文本。（温馨提示：每句歌词独占一行最好）
+    </string>
+    <string name="lyrics_edit_hint">
+        请在本编辑框中编辑您的歌词文本,例如：\n童年\n演唱：罗大佑、周华健、李宗盛、张震岳\n纵贯线superband\nlyrics made by Hudson\n
+        罗：池塘边的榕树上\n知了在声声叫着夏天\n...
+    </string>
+    <string name="lyrics_make_three_tips">控制说明：\n 1.左箭头、右箭头是快退快进控制键，用于较小范围的播放进度调节;\n
+        2.上箭头、下箭头是歌词切换键，当歌手演唱到该句歌词时，您需要通过这两个控制键来切换到指定歌词;\n
+        3.刷新按键是重新制作控制，如果您觉得歌词制作不好，可以重新开始;\n
+        4.播放按键是开始制作控制键;\n
+        5.完成按键就不多说了\n
+        准备好了吗？点击播放按钮开始制作歌词吧！
+    </string>
+    <string name="lyrics_make_complete_title">歌词制作完成</string>
+    <string name="lyrics_make_complete_content">恭喜你，歌词制作完成！</string>
+    <string name="lyrics_make_save_failed_title">歌词保存失败</string>
+    <string name="lyrics_make_save_failed_content">很抱歉，歌词保存失败！</string>
+    <string name="lyrics_make_save_again">再次保存</string>
+    <string name="lyrics_make_save_cancel">取消保存</string>
+    <string name="lyrics_has_not_modify">对不起，您还没有编辑歌词呢！</string>
+
+
+    <string name="notification_create_tip">动铃音乐正在播放</string>
+
+    <string name="download_setting">下载设置</string>
+    <string name="headset_wire_button_setting">耳机按键设置</string>
+    <string name="app_theme_bg_setting">默认背景设置</string>
+    <string name="app_theme_bg">默认页面背景</string>
+    <string name="download_music_type">下载音乐的音质</string>
+    <string name="download_type_standard">标准(128kbit/s) 文件大约4M</string>
+    <string name="download_type_64">中等(64kbit/s) 文件大约2M</string>
+    <string name="download_type_256">高等(256kbit/s) 文件大约6M</string>
+    <string name="download_type_320">极品(320kbit/s) 文件大约7.5M</string>
+    <string name="show_desktop_lyrics">开启桌面歌词</string>
+    <string name="headset_plug_pause">拔下耳机自动暂停</string>
+    <string name="phony_complete_continue_play">以前是播放，接完电话后自动继续播放</string>
+    <string name="exit_save_song_info">定位上次退出的歌曲</string>
+    <string name="exit_save_song_progress">定位上次退出歌曲的进度</string>
+
+
+    <string name="lyrics_setting_tip">歌词设置</string>
+    <string name="lyrics_font_setting">字体更换</string>
+    <string name="lyrics_focus_text_size">播放歌词字体大小(必须大于非播放歌词)</string>
+    <string name="lyrics_normal_text_size">非播放歌词字体大小</string>
+    <string name="lyrics_speed_slow_time">调整歌词快进快退的时间（毫秒）</string>
+    <string name="lyrics_show_count">显示歌词个数（您最好设置为奇数）</string>
+    <string name="lyrics_focus_text_color">播放歌词颜色</string>
+    <string name="lyrics_normal_text_color">非播放歌词颜色</string>
+    <string name="lyrics_other_setting">歌词其他设置</string>
+    <string name="visible_music">可视化音乐设置</string>
+    <string name="visible_music_circle">圆形频谱</string>
+    <string name="visible_music_circle_color">圆形频谱颜色</string>
+    <string name="visible_music_circle_rotate_color">旋转频谱色</string>
+    <string name="visible_circle_add_color">添加新颜色</string>
+    <string name="visible_circle_modify_color">添加新颜色</string>
+    <string name="color_setting">颜色设置</string>
+    <string name="visible_circle_column_count">频谱条个数</string>
+    <string name="visible_circle_column_stroke_width">频谱条宽度</string>
+    <string name="visible_music_bg">动态背景</string>
+    <string name="visible_music_bg_radius">展示半径</string>
+    <string name="visible_music_bg_showornot">显示</string>
+    <string name="gaosi_setting">模糊背景设置</string>
+    <string name="visible_bg_music_enable">动态背景启用</string>
+    <string name="visible_bg_music_radius">动态背景区域范围</string>
+    <string name="visible_bg_music_color">动态背景颜色</string>
+    <string name="gaosi_radius_setting">背景模糊程度设置</string>
+    <string name="gaosi_radius">模糊半径</string>
+
+    <string name="no_font_file_found_tip">在动铃音乐字体目录下没有找到任何字体文件！</string>
+    <string name="preview">预览</string>
+
+    <string name="ok_tip">确定</string>
+    <string name="cancel_tip">取消</string>
+
+    <string name="music_menu_as_next_play">作为下一曲准备播放</string>
+    <string name="music_menu_add">添加到歌单</string>
+    <string name="music_menu_delete">删除歌曲</string>
+    <string name="music_menu_scan_info">查看歌曲信息</string>
+    <string name="music_menu_set_ring">设置为铃声</string>
+    <string name="music_info_file_name">文件名称:</string>
+    <string name="music_info_singer">歌手信息:</string>
+    <string name="music_info_album">专辑信息:</string>
+    <string name="music_info_unknown_album">未知专辑</string>
+    <string name="music_info_file_path">文件路径:</string>
+
+    <string name="dialog_set_ring">设置铃声</string>
+    <string name="set_ring_alarm">闹铃铃声</string>
+    <string name="set_ring_notification">通知铃声</string>
+    <string name="set_ring_ringtone">来电铃声</string>
+    <string name="set_ring_all_ring">所有铃声</string>
+
+    <string name="dialog_exit_at_time">定时退出</string>
+    <string name="dialog_exit_song_num">定时歌曲数退出</string>
+    <string name="dialog_exit_time_offset">定时时间段退出</string>
+    <string name="dialog_exit_time_point">定时时间点退出</string>
+    <string name="exit_time_offset_tip">请选择多长时间后关闭应用:（单位：分钟）</string>
+    <string name="exit_time_song_count_tip">请选择播放多少首歌曲后退出</string>
+    <string name="dialog_button_i_know">我知道了</string>
+    <string name="dialog_button_cancel_exit">取消退出</string>
+    <string name="dialog_time_point_choose">选择一个时间</string>
+
+    <string name="song_list_desc">歌单详情</string>
+    <string name="pull_load_more">上拉加载更多数据</string>
+    <string name="loading_data">正在加载数据</string>
+    <string name="no_more_data">没有更多数据了</string>
+
+    <string name="downloading_pause_tip">已暂停，点击继续下载</string>
+    <string name="download">下载</string>
+    <string name="downloading_failed_tip">下载失败，点击重新下载</string>
+    <string name="downloading_successfully">下载成功</string>
+    <string name="downloading_waiting">等待下载</string>
+    <string name="unknown_music_album">未知专辑</string>
+
+    <string name="dialog_modify_title">修改播放歌词</string>
+    <string name="lrc_should_not_empty">歌词不能为空!</string>
+    <string name="gedan_title_should_not_empty">歌单标题不能为空!</string>
+    <string name="gedan_desc_empty">歌单描述为空哦！</string>
+    <string name="gedan_tag_empty">您输入的标签为空哦！</string>
+    <string name="lrc_not_modify">歌词没有任何修改!</string>
+
+    <string name="search_hint">搜索歌曲、歌手、专辑</string>
+    <string name="list_search_hint">输入搜索列表中的歌曲</string>
+    <string name="search_hot">热门搜索</string>
+    <string name="history_search">历史搜索</string>
+    <string name="empty_search">没有任何搜索结果</string>
+
+    <string name="my_favorite_gedan">我的最爱</string>
+
+
+    <string name="about_words">    声明：本应用所有音乐资源均源自百度音乐，未经许可不得擅自将本应用进行大范围传播，否则所造成的一切后果均由传播者承当，本开发者不负任何责任！\n    鸣谢：感谢所有github上为本应用提供资源的开发者，感谢他们的辛勤劳作与开源奉献精神，正是他们的努力与付出，本应用才能有这么丰富多彩的内容；感谢IconFinder、千图网等图标网站提供的免费图标素材，正是这些网站的免费资源，才使得本应用界面更加简洁与美观。\n    如有任何使用问题以及安卓字体文件需求，欢迎联系开发者\n    邮箱：2216274479@qq.com\n     开发时间：2017-1-2 ~ 2017-6-24</string>
+
+</resources>

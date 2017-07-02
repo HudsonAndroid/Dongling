@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:hudson="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="#f0ecd5"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#d2be92"
+                android:gravity="center"
+                android:text="@string/dialog_exit_song_num"
+                android:textColor="#42aa0f"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#8b846b"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/setting_item_title_style"
+            android:text="@string/exit_time_song_count_tip"/>
+
+        <com.hudson.donglingmusic.ui.view.SelectProgressBar
+            android:id="@+id/spb_exit_select_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            hudson:max_value="50"
+            hudson:min_value="1"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_cancel"
+                style="@style/cancel_button_style"/>
+
+            <Button
+                android:id="@+id/bt_ok"
+                style="@style/ok_button_style"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

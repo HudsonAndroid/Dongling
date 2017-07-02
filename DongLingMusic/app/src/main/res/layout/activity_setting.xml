@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <View android:layout_height="1dp"
+          android:layout_marginTop="10dp"
+          android:background="@color/appThemeColor"
+          android:layout_width="match_parent"/>
+    <CheckedTextView
+        android:id="@+id/ctv_show_desktop_lyrics"
+        style="@style/CheckedTextViewTheme"
+        android:text="@string/show_desktop_lyrics" />
+    <View android:layout_height="1dp"
+          android:background="@color/appThemeColor"
+          android:layout_width="match_parent"/>
+
+
+    <View android:layout_height="1dp"
+          android:layout_marginTop="10dp"
+          android:background="@color/appThemeColor"
+          android:layout_width="match_parent"/>
+    <CheckedTextView
+        android:id="@+id/ctv_headset_plug_pause"
+        style="@style/CheckedTextViewTheme"
+        android:text="@string/headset_plug_pause" />
+
+    <View android:layout_height="1dp"
+          android:background="@color/appThemeColor"
+          android:layout_width="match_parent"/>
+
+
+    <View android:layout_height="1dp"
+          android:layout_marginTop="10dp"
+          android:background="@color/appThemeColor"
+          android:layout_width="match_parent"/>
+    <CheckedTextView
+        android:id="@+id/ctv_phone_complete_continue_play"
+        style="@style/CheckedTextViewTheme"
+        android:text="@string/phony_complete_continue_play" />
+    <View android:layout_height="1dp"
+          android:background="@color/appThemeColor"
+          android:layout_width="match_parent"/>
+
+    <View android:layout_height="1dp"
+          android:layout_marginTop="10dp"
+          android:background="@color/appThemeColor"
+          android:layout_width="match_parent"/>
+    <CheckedTextView
+        android:id="@+id/ctv_exit_save_song_info"
+        style="@style/CheckedTextViewTheme"
+        android:text="@string/exit_save_song_info" />
+    <View android:layout_height="1dp"
+          android:background="@color/appThemeColor"
+          android:layout_width="match_parent"/>
+
+
+    <View android:layout_height="1dp"
+          android:layout_marginTop="10dp"
+          android:background="@color/appThemeColor"
+          android:layout_width="match_parent"/>
+    <CheckedTextView
+        android:id="@+id/ctv_exit_save_song_progress"
+        style="@style/CheckedTextViewTheme"
+        android:text="@string/exit_save_song_progress" />
+    <View android:layout_height="1dp"
+          android:background="@color/appThemeColor"
+          android:layout_width="match_parent"/>
+
+
+    <TextView
+        style="@style/setting_item_title_style"
+        android:text="@string/download_setting"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_setting_item_stroke"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_download_music_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_setting_item"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="14dp" >
+
+            <TextView
+                style="@style/setting_item_textview_style"
+                android:text="@string/download_music_type"/>
+
+            <TextView
+                android:id="@+id/tv_music_type"
+                android:text="标准"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_right" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/setting_item_title_style"
+        android:text="@string/headset_wire_button_setting"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_setting_item_stroke"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_headset_wire_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_setting_item"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="14dp" >
+
+            <TextView
+                style="@style/setting_item_textview_style"
+                android:text="@string/headset_wire_button_setting"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_right" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/setting_item_title_style"
+        android:text="@string/app_theme_bg_setting"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_setting_item_stroke"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_app_theme_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_setting_item"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="14dp" >
+
+            <TextView
+                style="@style/setting_item_textview_style"
+                android:text="@string/app_theme_bg"/>
+
+            <ImageView
+                android:id="@+id/iv_default_bg_preview"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_right" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

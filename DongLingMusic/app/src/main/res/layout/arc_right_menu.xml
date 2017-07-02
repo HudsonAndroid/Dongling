@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hudson.donglingmusic.ui.view.ArcMenu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hudson="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/right_menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    hudson:position="right_bottom"
+    hudson:radius="180dp" >
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/composer_button" >
+        <ImageView
+            android:id="@+id/id_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/composer_icn_plus"/>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:tag="shuffle"
+        android:src="@drawable/page_menu_next"/>
+    <ImageView
+        android:id="@+id/iv_play_pause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:tag="next"
+        android:src="@drawable/page_menu_play"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:tag="play"
+        android:src="@drawable/page_menu_pre"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/page_menu_playlist"/>
+
+</com.hudson.donglingmusic.ui.view.ArcMenu>

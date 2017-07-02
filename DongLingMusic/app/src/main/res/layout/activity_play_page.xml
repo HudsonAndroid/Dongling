@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hudson.donglingmusic.ui.view.SlideRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_play_page_back"
+                android:layout_width="20dp"
+                android:layout_height="36dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/selector_play_page_back"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_music_title"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#F5EFEF"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_music_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:maxWidth="150dp"
+                    android:textColor="#E1DEDE"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/playpage_download"
+                android:layout_width="32dp"
+                android:padding="4dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/selector_btn_blue_bg"
+                android:src="@drawable/play_page_download"
+                android:layout_height="32dp"/>
+
+            <ImageView
+                android:id="@+id/playpage_favorite"
+                android:background="@drawable/selector_btn_blue_bg"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:src="@drawable/play_page_favorite_empty"/>
+
+            <ImageView
+                android:id="@+id/equalizer"
+                android:layout_width="32dp"
+                android:layout_margin="4dp"
+                android:layout_height="32dp"
+                android:layout_toRightOf="@id/playpage_favorite"
+                android:background="@drawable/selector_btn_blue_bg"
+                android:padding="4dp"
+                android:src="@drawable/play_page_equalizer"/>
+
+        </LinearLayout>
+
+
+        <com.hudson.donglingmusic.ui.view.PlayPageViewPager
+            android:id="@+id/vp_play"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+        <RelativeLayout
+            android:id="@+id/bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="3dp"
+            android:gravity="center">
+
+            <!--splitTrack属性是在android 5.0以上会显示父布局的问题而设置的-->
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:maxHeight="10.0dp"
+                android:minHeight="10.0dp"
+                android:progressDrawable="@drawable/po_seekbar"
+                android:splitTrack="false"
+                android:thumb="@drawable/seekbar_thumb"/>
+
+            <TextView
+                android:id="@+id/time_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/seekbar"
+                android:layout_below="@id/seekbar"
+                android:layout_marginLeft="10dp"
+                android:text="00:00"
+                android:textColor="#42aa0f"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/time_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/seekbar"
+                android:layout_below="@id/seekbar"
+                android:layout_marginRight="12dp"
+                android:text="00:00"
+                android:textColor="#42aa0f"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/arc_left_menu"/>
+
+    <include layout="@layout/arc_right_menu"/>
+
+</com.hudson.donglingmusic.ui.view.SlideRelativeLayout>

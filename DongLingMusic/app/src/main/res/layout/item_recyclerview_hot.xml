@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:hudson="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/ll_hot_item_root"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/selector_hot_item_bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="最新热门"
+            style="@style/item_iv_title_style"/>
+
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="更多"
+            android:drawableRight="@drawable/arrow_right"
+            android:textColor="@color/halfTransparent"
+            android:textSize="13sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_song1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content">
+
+            <com.hudson.donglingmusic.ui.view.RatioImageView
+                android:id="@+id/iv_music_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hudson:src="@drawable/icon_player"/>
+            <TextView
+                android:id="@+id/tv_singer"
+                android:layout_alignLeft="@id/iv_music_bg"
+                android:layout_alignBottom="@id/iv_music_bg"
+                android:text="许巍"
+                android:background="@drawable/gedan_title_bg"
+                style="@style/item_iv_singer_name"/>
+
+            <TextView
+                android:id="@+id/tv_song_title"
+                android:layout_alignLeft="@id/iv_music_bg"
+                android:text="曾经的你"
+                android:layout_below="@id/iv_music_bg"
+                style="@style/item_tv_song_title"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_song2"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <com.hudson.donglingmusic.ui.view.RatioImageView
+                android:id="@+id/iv_music_bg2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hudson:src="@drawable/icon_player"/>
+            <TextView
+                android:id="@+id/tv_singer2"
+                android:layout_alignLeft="@id/iv_music_bg2"
+                android:layout_alignBottom="@id/iv_music_bg2"
+                android:background="@drawable/gedan_title_bg"
+                android:text="许巍"
+                style="@style/item_iv_singer_name"/>
+
+            <TextView
+                android:id="@+id/tv_song_title2"
+                android:layout_alignLeft="@id/iv_music_bg2"
+                style="@style/item_tv_song_title"
+                android:text="曾经的你"
+                android:layout_below="@id/iv_music_bg2"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_song3"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <com.hudson.donglingmusic.ui.view.RatioImageView
+                android:id="@+id/iv_music_bg3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hudson:src="@drawable/icon_player"/>
+            <TextView
+                android:id="@+id/tv_singer3"
+                android:layout_alignLeft="@id/iv_music_bg3"
+                android:layout_alignBottom="@id/iv_music_bg3"
+                android:text="许巍"
+                android:background="@drawable/gedan_title_bg"
+                style="@style/item_iv_singer_name"/>
+
+            <TextView
+                android:id="@+id/tv_song_title3"
+                android:layout_alignLeft="@id/iv_music_bg3"
+                style="@style/item_tv_song_title"
+                android:text="曾经的你"
+                android:layout_below="@id/iv_music_bg3"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

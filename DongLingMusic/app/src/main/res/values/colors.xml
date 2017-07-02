@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray">#cccccc</color>
+    <color name="half_gray">#22cccccc</color>
+    <color name="darkGray">#99000000</color>
+    <color name="red">#ff0000</color>
+    <color name="dark_red">#ea5500</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="little_black">#88000000</color>
+    <color name="halfTransparent">#2000</color>
+    <color name="widget_stroke_color">#1ccc</color>
+    <color name="appThemeColor">#657686</color>
+    <color name="halfAppThemeColor">#66657686</color>
+    <color name="list_bg">#EDEDED</color>
+    <color name="yellow">#E8BF6A</color>
+    <color name="half_yellow">#88E8BF6A</color>
+    <color name="transparent">#00000000</color>
+    <color name="playpage_item_color">#22000000</color>
+
+    <color name="selected_item_color">#3b70a3</color>
+
+    <color name="theme_green">#4AAD11</color>
+</resources>

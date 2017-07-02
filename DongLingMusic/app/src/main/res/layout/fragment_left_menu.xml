@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/default_bg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll_play_mode"
+            style="@style/left_menu_item_root_style">
+
+            <ImageView
+                android:id="@+id/iv_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mode_menu_list_loop"/>
+
+            <TextView
+                style="@style/left_menu_item_textview_style"
+                android:text="@string/play_mode"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_equalizer"
+            style="@style/left_menu_item_root_style">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_equalizer"/>
+
+            <TextView
+                style="@style/left_menu_item_textview_style"
+                android:text="@string/equalize"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_exit_timing"
+            style="@style/left_menu_item_root_style">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_exit_timing"/>
+
+            <TextView
+                style="@style/left_menu_item_textview_style"
+                android:text="@string/exit_timing"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_setting"
+            style="@style/left_menu_item_root_style">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_setting"/>
+
+            <TextView
+                style="@style/left_menu_item_textview_style"
+                android:text="@string/setting"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_about"
+            style="@style/left_menu_item_root_style">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_about"/>
+
+            <TextView
+                style="@style/left_menu_item_textview_style"
+                android:text="@string/about"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_exit"
+            style="@style/left_menu_item_root_style">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_exit"/>
+
+            <TextView
+                style="@style/left_menu_item_textview_style"
+                android:text="@string/exit"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

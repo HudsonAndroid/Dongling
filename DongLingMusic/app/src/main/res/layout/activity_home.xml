@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hudson.donglingmusic.ui.activity.HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_home"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_yellow_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_music_pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/icon_player"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <com.hudson.donglingmusic.ui.view.MarqueeTextView
+                android:id="@+id/tv_bottom_music_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="15dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/tv_bottom_music_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/author"
+                android:textColor="@color/black"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_bottom_pre"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/selector_btn_halftrans_bg"
+            android:padding="6dp"
+            android:src="@drawable/bottom_bar_pre"/>
+
+        <ImageView
+            android:id="@+id/iv_bottom_play_pause"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/selector_btn_halftrans_bg"
+            android:padding="6dp"
+            android:src="@drawable/bottom_bar_play"/>
+
+        <ImageView
+            android:id="@+id/iv_bottom_next"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/selector_btn_halftrans_bg"
+            android:padding="6dp"
+            android:src="@drawable/bottom_bar_next"/>
+
+        <ImageView
+            android:id="@+id/iv_bottom_playlist"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/selector_btn_halftrans_bg"
+            android:padding="6dp"
+            android:src="@drawable/bottom_bar_playlist"/>
+
+    </LinearLayout>
+
+</LinearLayout>

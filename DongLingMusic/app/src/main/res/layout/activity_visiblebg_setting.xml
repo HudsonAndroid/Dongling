@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:hudson="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <View android:layout_height="1dp"
+          android:layout_marginTop="10dp"
+          android:background="@color/appThemeColor"
+          android:layout_width="match_parent"/>
+    <CheckedTextView
+        android:id="@+id/ctv_enable_visible_bg"
+        style="@style/CheckedTextViewTheme"
+        android:text="@string/visible_bg_music_enable" />
+    <View android:layout_height="1dp"
+          android:background="@color/appThemeColor"
+          android:layout_width="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/ll_enable_root"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/setting_item_title_style"
+            android:text="@string/visible_bg_music_radius"/>
+
+        <com.hudson.donglingmusic.ui.view.SelectProgressBar
+            android:id="@+id/spb_visible_bg_radius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            hudson:line_color="@color/gray"
+            hudson:max_value="1200"
+            hudson:min_value="300"/>
+
+        <TextView
+            style="@style/setting_item_title_style"
+            android:text="@string/visible_bg_music_color"/>
+
+        <View
+            android:id="@+id/v_visible_bg_color"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"/>
+
+        <com.hudson.donglingmusic.ui.view.BigBackgroundView
+            android:id="@+id/bbv_visible_bg_preview"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="350dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

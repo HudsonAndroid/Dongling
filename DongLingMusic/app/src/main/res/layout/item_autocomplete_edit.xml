@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/tv_auto"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:paddingTop="10dp"
+          android:paddingLeft="5dp"
+          android:paddingBottom="10dp"
+          android:gravity="center_vertical"
+          android:textColor="#000000"
+          android:background="@color/list_bg"
+          android:textSize="15sp"/>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#f0ecd5" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#d2be92"
+            android:gravity="center"
+            android:text="@string/dialog_set_ring"
+            android:textColor="#42aa0f"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#8b846b" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bt_alarm"
+            android:text="@string/set_ring_alarm"
+            style="@style/SetRingDialogItemStyle"/>
+
+        <View
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/halfAppThemeColor"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <Button
+            android:id="@+id/bt_notification"
+            style="@style/SetRingDialogItemStyle"
+            android:text="@string/set_ring_notification" />
+
+        <View
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/halfAppThemeColor"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <Button
+            android:id="@+id/bt_ringtone"
+            style="@style/SetRingDialogItemStyle"
+            android:text="@string/set_ring_ringtone" />
+
+        <View
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/halfAppThemeColor"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <Button
+            android:id="@+id/bt_allring"
+            style="@style/SetRingDialogItemStyle"
+            android:text="@string/set_ring_all_ring" />
+    </LinearLayout>
+
+</LinearLayout>

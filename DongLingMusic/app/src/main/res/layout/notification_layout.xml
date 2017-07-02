@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:gravity="center_vertical"
+              android:layout_height="60dp">
+
+    <ImageView
+        android:id="@+id/iv_notification_icon"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_notification_title"
+            android:text="@string/app_name"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingTop="6dp"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:id="@+id/tv_notification_info"
+            android:text="@string/author"
+            android:textColor="@color/gray"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_height="0dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_notification_play_pause"
+        android:layout_width="45dp"
+        android:src="@drawable/notification_play"
+        android:background="@drawable/selector_btn_halftrans_bg"
+        android:padding="8dp"
+        android:layout_height="45dp"/>
+
+    <ImageView
+        android:id="@+id/iv_notification_next"
+        android:layout_width="30dp"
+        android:padding="5dp"
+        android:background="@drawable/selector_btn_halftrans_bg"
+        android:src="@drawable/notification_next"
+        android:layout_height="30dp"/>
+
+</LinearLayout>

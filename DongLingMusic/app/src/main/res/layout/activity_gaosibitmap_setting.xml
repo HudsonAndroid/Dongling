@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:hudson="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        style="@style/setting_item_title_style"
+        android:text="@string/gaosi_radius"/>
+
+    <com.hudson.donglingmusic.ui.view.SelectProgressBar
+        android:id="@+id/spb_gaosi_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        hudson:line_color="@color/gray"
+        hudson:max_value="150"
+        hudson:min_value="1"/>
+
+    <ImageView
+        android:id="@+id/iv_preview_gaosi"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/bg_activity_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

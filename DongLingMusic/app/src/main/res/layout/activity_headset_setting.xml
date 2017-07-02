@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="耳机按键设置"
+        android:textColor="#ff808080"
+        android:textSize="14.0sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/shape_setting_item_stroke"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:padding="6dp"
+                android:text="按1次："
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@id/text1"
+                android:layout_height="48dp"
+                android:layout_marginRight="6dp"
+            />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#cccccc" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:padding="6dp"
+                android:text="按2次："
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@id/text2"
+                android:layout_height="48dp"
+                android:layout_marginRight="6dp"
+            />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#cccccc" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:padding="6dp"
+                android:text="长按："
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@id/text3"
+                android:layout_height="48dp"
+                android:layout_marginRight="6dp"
+            />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_setting_item_stroke"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:text="温馨提示：可能有的耳机没有耳机按键，或者耳机按键不正规，亦或是耳机按键无效等等，这些问题均可能导致本功能失效。"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

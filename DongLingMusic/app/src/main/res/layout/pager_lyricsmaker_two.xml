@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="@string/lyrics_make_step_two_desc"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_lyrics_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_edit_bg"
+        android:hint="@string/lyrics_edit_hint"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:layout_height="0dp"/>
+</LinearLayout>

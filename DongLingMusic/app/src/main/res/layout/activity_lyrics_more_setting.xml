@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:hudson="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/ll_lyrics_more_setting_root"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        style="@style/setting_item_title_style"
+        android:text="@string/lyrics_normal_text_size"/>
+
+    <com.hudson.donglingmusic.ui.view.SelectProgressBar
+        android:id="@+id/spb_lyrics_normal_text_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        hudson:line_color="@color/gray"
+        hudson:max_value="25"
+        hudson:min_value="15"/>
+
+    <TextView
+        style="@style/setting_item_title_style"
+        android:text="@string/lyrics_focus_text_size"/>
+
+    <com.hudson.donglingmusic.ui.view.SelectProgressBar
+        android:id="@+id/spb_lyrics_focus_text_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        hudson:line_color="@color/gray"
+        hudson:max_value="30"
+        hudson:min_value="15"/>
+
+    <TextView
+        style="@style/setting_item_title_style"
+        android:text="@string/lyrics_show_count"/>
+
+    <com.hudson.donglingmusic.ui.view.SelectProgressBar
+        android:id="@+id/spb_lyrics_show_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        hudson:line_color="@color/gray"
+        hudson:max_value="7"
+        hudson:min_value="3"
+    />
+    <TextView
+        style="@style/setting_item_title_style"
+        android:text="@string/lyrics_speed_slow_time"/>
+
+    <com.hudson.donglingmusic.ui.view.SelectProgressBar
+        android:id="@+id/spb_lyrics_speed_slow_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        hudson:line_color="@color/gray"
+        hudson:max_value="1000"
+        hudson:min_value="100"
+    />
+
+    <TextView
+        style="@style/setting_item_title_style"
+        android:text="@string/lyrics_normal_text_color"/>
+
+    <View
+        android:id="@+id/v_normal_color"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"/>
+
+    <TextView
+        style="@style/setting_item_title_style"
+        android:text="@string/lyrics_focus_text_color"/>
+
+    <View
+        android:id="@+id/v_focus_color"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"/>
+
+
+    <TextView
+        style="@style/setting_item_title_style"
+        android:text="@string/preview"/>
+
+
+</LinearLayout>

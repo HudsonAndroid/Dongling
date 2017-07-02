@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hudson.donglingmusic.ui.view.SlideRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hudson="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/srl_lyrics_maker_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_bg"
+    tools:context="com.hudson.donglingmusic.ui.activity.LyricsMakerActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.hudson.donglingmusic.ui.view.StepProgressView
+            android:id="@+id/spv_step_tip"
+            hudson:step_counts="3"
+            hudson:circle_radius="8dp"
+            hudson:auto_adapte="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <com.hudson.donglingmusic.ui.view.PlayPageViewPager
+            android:id="@+id/vp_lyrics_maker"
+            android:layout_width="match_parent"
+            android:background="#22000000"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</com.hudson.donglingmusic.ui.view.SlideRelativeLayout>

@@ -1,0 +1,1 @@
+include ':app', ':slidingmenulibrary', ':xUtilsLibrary', ':viewpagerindicator', ':myrecyclerview', ':gaosibitmap', 'HoloColorPickerLibrary'

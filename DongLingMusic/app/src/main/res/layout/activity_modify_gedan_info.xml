@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_change_bg"
+        android:background="@drawable/selector_btn_blue_bg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="更换背景图"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:layout_width="0dp"
+                  android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/iv_gedan_bg"
+            android:background="@drawable/gedan_disk"
+            android:layout_width="60dp"
+                   android:layout_height="60dp"/>
+
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+          android:background="@color/appThemeColor"
+          android:layout_marginRight="5dp"
+          android:layout_marginLeft="5dp"
+          android:layout_height="0.5dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_gedan_title"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="歌单名称"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_gedan_title"
+            android:text="暂无名称"
+            android:maxWidth="80dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+          android:background="@color/appThemeColor"
+          android:layout_marginRight="5dp"
+          android:layout_marginLeft="5dp"
+          android:layout_height="0.5dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_gedan_tag"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="歌单标签"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_gedan_tag"
+            android:text="暂无标签"
+            android:maxWidth="80dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+          android:background="@color/appThemeColor"
+          android:layout_marginRight="5dp"
+          android:layout_marginLeft="5dp"
+          android:layout_height="0.5dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_gedan_desc"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="歌单描述"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_gedan_desc"
+            android:text="暂无描述"
+            android:maxWidth="80dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+          android:background="@color/appThemeColor"
+          android:layout_marginRight="5dp"
+          android:layout_marginLeft="5dp"
+          android:layout_height="0.5dp"/>
+
+</LinearLayout>

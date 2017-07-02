@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="#f0ecd5"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#d2be92"
+            android:gravity="center"
+            android:textColor="#42aa0f"
+            android:textSize="18sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#8b846b"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_dialog_content"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_cancel"
+            style="@style/cancel_button_style"/>
+
+        <Button
+            android:id="@+id/bt_ok"
+            style="@style/ok_button_style"/>
+    </LinearLayout>
+
+</LinearLayout>

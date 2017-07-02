@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:hudson="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <TextView
+        style="@style/setting_item_title_style"
+        android:text="@string/visible_circle_column_count"/>
+
+    <com.hudson.donglingmusic.ui.view.SelectProgressBar
+        android:id="@+id/spb_circle_column_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        hudson:line_color="@color/gray"
+        hudson:max_value="200"
+        hudson:min_value="50"/>
+
+    <TextView
+        style="@style/setting_item_title_style"
+        android:text="@string/visible_circle_column_stroke_width"/>
+
+    <com.hudson.donglingmusic.ui.view.SelectProgressBar
+        android:id="@+id/spb_circle_column_stroke_width"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        hudson:line_color="@color/gray"
+        hudson:max_value="10"
+        hudson:min_value="1"/>
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/setting_item_title_style" android:text="@string/visible_music_circle_color"/>
+
+    <LinearLayout
+        android:id="@+id/ll_colors_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_color_add"
+            android:background="@drawable/selector_btn_blue_bg"
+            android:src="@drawable/visible_color_add"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/iv_color_modify"
+            android:background="@drawable/selector_btn_blue_bg"
+            android:src="@drawable/visible_color_modify"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/iv_color_delete"
+            android:background="@drawable/selector_btn_blue_bg"
+            android:src="@drawable/visible_color_delete"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View android:layout_height="1dp"
+          android:layout_marginTop="10dp"
+          android:background="@color/appThemeColor"
+          android:layout_width="match_parent"/>
+    <CheckedTextView
+        android:id="@+id/ctv_rotate_color"
+        style="@style/CheckedTextViewTheme"
+        android:text="@string/visible_music_circle_rotate_color" />
+    <View android:layout_height="1dp"
+          android:background="@color/appThemeColor"
+          android:layout_width="match_parent"/>
+
+    <com.hudson.donglingmusic.ui.view.CircleVisualizerFFTView
+        android:id="@+id/cvf_preview"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

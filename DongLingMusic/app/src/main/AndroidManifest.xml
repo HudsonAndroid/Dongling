@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.hudson.donglingmusic">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- 锁屏用到 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+
+    <application
+        android:name=".global.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_player"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_player"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity android:name=".ui.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MUSIC_PLAYER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.GuideActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity
+            android:name=".ui.activity.HomeActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.PageIndicatorDefaults">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:scheme="content"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="audio/*"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.MusicService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <service android:name=".service.WidgetUpdateService"/>
+
+        <activity
+            android:name=".ui.activity.PlayPageActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/setting_activity_Theme">
+        </activity>
+        <activity
+            android:name=".ui.activity.LyricsMakerActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/setting_activity_Theme">
+        </activity>
+        <activity
+            android:name=".ui.activity.MoreInfoActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/setting_activity_Theme">
+        </activity>
+        <activity
+            android:name=".ui.activity.PlayPageSettingActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/setting_activity_Theme">
+        </activity>
+        <activity
+            android:name=".ui.activity.LyricsFontSelectorActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/setting_activity_Theme">
+        </activity>
+        <activity
+            android:name=".ui.activity.LyricsMoreSettingActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/setting_activity_Theme">
+        </activity>
+        <activity
+            android:name=".ui.activity.GaosiBgBitmapSettingActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/setting_activity_Theme">
+        </activity>
+        <activity
+            android:name=".ui.activity.CircleVisibleMusicSettingActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/setting_activity_Theme">
+        </activity>
+        <activity
+            android:name=".ui.activity.VisibleBgSettingActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/setting_activity_Theme">
+        </activity>
+        <activity
+            android:name=".ui.activity.AboutActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/setting_activity_Theme">
+        </activity>
+        <activity
+            android:name=".ui.activity.SettingActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/setting_activity_Theme">
+        </activity>
+        <activity
+            android:name=".ui.activity.SongListActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/setting_activity_Theme">
+        </activity>
+        <activity
+            android:name=".ui.activity.ArtistListActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/setting_activity_Theme">
+        </activity>
+        <activity
+            android:name=".ui.activity.CategorySongListActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/setting_activity_Theme">
+        </activity>
+        <activity
+            android:name=".ui.activity.ListSearchActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|keyboardHidden|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan"
+            android:theme="@style/ListSearchTheme">
+        </activity>
+        <activity
+            android:name=".ui.activity.AlbumListActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/setting_activity_Theme">
+        </activity>
+        <activity
+            android:name=".ui.activity.GedanListActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/setting_activity_Theme">
+        </activity>
+        <activity
+            android:name=".ui.activity.HeadsetSettingActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/setting_activity_Theme">
+        </activity>
+        <activity
+            android:name=".ui.activity.MyGedanListActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/setting_activity_Theme">
+        </activity>
+        <activity
+            android:name=".ui.activity.ModifyGedanInfoActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/setting_activity_Theme">
+        </activity>
+
+        <receiver android:name=".ui.widget.DeskTopWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/process_widget_provider"/>
+        </receiver>
+
+
+        <receiver android:name=".receiver.HeadsetButtonReceiver" >
+            <intent-filter android:priority="1001" >
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.activity.LockScreenActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.hudson.donglingmusic.lockscreen"
+            android:theme="@style/lock_activity_theme">
+        </activity>
+        <activity
+            android:name=".ui.activity.SearchActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/setting_activity_Theme">
+        </activity>
+        <activity android:name=".ui.activity.ChoosePicturePartActivity">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hudson.donglingmusic.ui.view.ArcMenu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:hudson="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/left_menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    hudson:position="left_bottom"
+    hudson:radius="180dp" >
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/composer_button" >
+        <ImageView
+            android:id="@+id/id_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/composer_icn_plus"/>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/page_menu_search"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/page_menu_setting"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/page_menu_maker"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/page_menu_share"/>
+</com.hudson.donglingmusic.ui.view.ArcMenu>

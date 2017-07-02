@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:hudson="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+
+    <com.hudson.donglingmusic.ui.view.MyInnerViewPager
+        android:id="@+id/vp_header"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+    </com.hudson.donglingmusic.ui.view.MyInnerViewPager>
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/header_indicator"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:padding="5dp"
+        hudson:radius="4dp"
+        hudson:fillColor="@color/red"
+        hudson:pageColor="@color/gray"
+        hudson:strokeWidth="0dp"
+    />
+
+
+</FrameLayout>
