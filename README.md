@@ -1,5 +1,6 @@
 # 动铃音乐简介
   动铃音乐是通过集成多款开源框架融汇而成，包括有litepal数据库操作、slidingMenu侧边栏、xUtils框架等。本应用最低至android 3.0，目标版本android 6.0。
+  视频展示地址：http://player.youku.com/player.php/sid/XMzAyNzY4NTE5Ng==/v.swf
 # 感谢与声明
 ## 感谢
   本应用很大一部分都是集成自其他开发者的开源框架，在此作者对这些开发者表达真挚的谢意，包括有：
