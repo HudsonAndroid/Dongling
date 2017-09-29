@@ -1,6 +1,9 @@
 # 动铃音乐简介
-  动铃音乐是通过集成多款开源框架融汇而成，包括有litepal数据库操作、slidingMenu侧边栏、xUtils框架等。本应用最低至android 3.0，目标版本android 6.0。
-  视频展示地址：http://player.youku.com/player.php/sid/XMzAyNzY4NTE5Ng==/v.swf
+#####  概要
+动铃音乐是通过集成多款开源框架融汇而成，包括有litepal数据库操作、slidingMenu侧边栏、xUtils框架等。本应用最低至android 3.0，目标版本android 6.0。
+#####  本应用支持的功能有：
+酷炫的锁屏页面（圆形seekbar）、定时退出（定时歌曲数退出、定时时间段退出、定时时间点退出）、炫彩可视化音乐之圆形频谱（使用了渐变色，思路来源自系统属性动画）、富有节奏感的可视化音乐之音乐频谱球（捕捉的是重低音）、桌面歌词（WindowManager + Handler控制）、多功能歌词（Handler实现，支持歌词制作、字体设置、歌词修改、歌词复制、歌词快进快退、调整歌词显示个数、歌词播放部分与非播放部分歌词颜色与大小）、背景模糊程度修改（使用的是JNI技术，高斯图片模糊算法）、网络本地音乐播放网络音乐下载、本地音乐列表快速定位与搜索（A-Z字母索引、匹配字符搜索、当前播放歌曲定位（使用了自定义的state选择器））、圆形桌面widget（思路来源：以前用过的mp3播放器随身听）等
+####  视频展示地址：http://player.youku.com/player.php/sid/XMzAyNzY4NTE5Ng==/v.swf
    ![image](https://github.com/HudsonAndroid/Dongling/raw/master/result%20pictures/circle%20visible%20music.png) 
    ![image](https://github.com/HudsonAndroid/Dongling/raw/master/result%20pictures/desktop%20widget%20and%20desktop%20lyrics.png)
    ![image](https://github.com/HudsonAndroid/Dongling/raw/master/result%20pictures/locke%20screen.png)
