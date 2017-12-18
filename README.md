@@ -14,11 +14,8 @@
 ###### 可视化http://player.youku.com/player.php/sid/XMzAyNzY4NTE5Ng==/v.swf
 ###### 整体展示一http://v.youku.com/v_show/id_XMzEwNzk4OTc2MA==.html?spm=a2h0j.8191426.0.0
 ###### 整体展示二http://v.youku.com/v_show/id_XMzEwNzk5MjA2NA==.html?spm=a2h0j.8191426.0.0&refer=pc-sns-1
-   ![image](https://github.com/HudsonAndroid/Dongling/raw/master/result%20pictures/circle%20visible%20music.png) 
-   ![image](https://github.com/HudsonAndroid/Dongling/raw/master/result%20pictures/desktop%20widget%20and%20desktop%20lyrics.png)
-   ![image](https://github.com/HudsonAndroid/Dongling/raw/master/result%20pictures/locke%20screen.png)
-   ![image](https://github.com/HudsonAndroid/Dongling/raw/master/result%20pictures/lyrics%20show.png)
-   ![image](https://github.com/HudsonAndroid/Dongling/raw/master/result%20pictures/make%20lyrics.png)
+<img width="320" height="480" src="https://github.com/HudsonAndroid/Dongling/raw/master/result%20pictures/circle%20visible%20music.png"/> <img width="320" height="480" src="https://github.com/HudsonAndroid/Dongling/raw/master/result%20pictures/desktop%20widget%20and%20desktop%20lyrics.png"/> <img width="320" height="480" src="https://github.com/HudsonAndroid/Dongling/raw/master/result%20pictures/locke%20screen.png"/> <img width="320" height="480" src="https://github.com/HudsonAndroid/Dongling/raw/master/result%20pictures/lyrics%20show.png"/> <img width="320" height="480" src="https://github.com/HudsonAndroid/Dongling/raw/master/result%20pictures/make%20lyrics.png"/>
+
 # 感谢与声明
 ## 感谢
   本应用集成了来自其他开发者的开源框架，在此作者对这些开发者表达真挚的谢意，包括有：
